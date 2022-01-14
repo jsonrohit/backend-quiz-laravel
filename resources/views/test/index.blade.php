@@ -8,11 +8,13 @@
                 <div class="box">
                     <div class="box-header">
                         <h3 class="box-title">
-                            <a href="{{ route('question-editadd')  }}" style="color:green;">
-                                <i class="fa fa-plus"></i> <span>Add test</span>
+                            <a href="{{ route('user.list')  }}" style="color:green;">
+                                <i class="fa fa-plus"></i> <span>Add User</span>
                             </a>
+                            </h3>
+                            <h3 class="box-title">
                             <a href="{{ route('question-editadd')  }}" style="color:green;">
-                                <i class="fa fa-plus"></i> <span>Add test</span>
+                                <i class="fa fa-plus"></i> <span>Add Question</span>
                             </a>
                         </h3>
                     </div><!-- /.box-header -->

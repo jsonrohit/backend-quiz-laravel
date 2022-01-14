@@ -4,13 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\SubmitQuiz;
 
-class Question extends Model
+class SubmitQuiz extends Model
 {
-    use HasFactory;
-     protected $table= 'qustions';
+     use HasFactory;
+     protected $table= 'submitquiz';
      protected $guarded = [];
-
-    
 }

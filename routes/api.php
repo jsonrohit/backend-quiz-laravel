@@ -18,5 +18,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('question-get',[App\Http\Controllers\Api\QuizApiController::class,'getQuestion']);
-Route::get('user-answer/{id}/{ans}',[App\Http\Controllers\Api\QuizApiController::class,'qusAnswer']);
+Route::post('login',[App\Http\Controllers\Api\UserApiController::class,'login']);
+Route::post('coin-update',[App\Http\Controllers\Api\UserApiController::class,'updateCoin']);
+
+Route::get('question-get/{user_id}',[App\Http\Controllers\Api\QuizApiController::class,'getQuestion']);
+Route::post('user-quiz-submit/{user_id}',[App\Http\Controllers\Api\QuizApiController::class,'userQuizSubmit']);
+Route::get('result/{testid}/{user_id}',[App\Http\Controllers\Api\QuizApiController::class,'getResult']);
